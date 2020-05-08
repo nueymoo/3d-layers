@@ -32,28 +32,28 @@
 
 
 :root {
-    --expode: perspective(2500px) rotateX(-20deg) rotateY(55deg) rotateZ(0deg)
+    --explode: perspective(2500px) rotateX(-20deg) rotateY(55deg) rotateZ(0deg)
     translateX(-400px) translateY(-150px);
 }
 
     .layers:hover .layer0 {
-        transform: var(--expode) translateZ(350px);
+        transform: var(--explode) translateZ(350px);
     }
     .layers:hover .layer1 {
-        transform: var(--expode) translateZ(250px);
+        transform: var(--explode) translateZ(250px);
     }
     .layers:hover .layer2 {
-        transform: var(--expode) translateZ(150px);
+        transform: var(--explode) translateZ(150px);
     }
     .layers:hover .layer3 {
-        transform: var(--expode) translateZ(0);
+        transform: var(--explode) translateZ(0);
     }
     .layers:hover .layer4 {
-        transform: var(--expode) translateZ(-130px);
+        transform: var(--explode) translateZ(-130px);
     }
     .layers:hover .layer5 {
-        transform: var(--expode) translateZ(-200px);
+        transform: var(--explode) translateZ(-200px);
     }
     .layers:hover .layer6 {
-        transform: var(--expode) translateZ(-270px);
+        transform: var(--explode) translateZ(-270px);
     }
