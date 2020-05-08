@@ -1,0 +1,59 @@
+
+.layers {
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;           
+}
+
+    img {
+        position: absolute;
+        max-width: 100%;
+        transform: translateX(-50%);
+
+        transition: all ease 1600ms;
+        transform-style: preserve-3d;
+    }
+
+    .layer3,
+    .layer2,
+    .layer1 {
+        max-width: 96%;
+        top: 8px;
+    }
+
+    .backscreen {
+        opacity: 20%;
+    }
+
+.content:hover > .hover-me {
+    visibility: hidden;
+}
+
+
+:root {
+    --expode: perspective(2500px) rotateX(-20deg) rotateY(55deg) rotateZ(0deg)
+    translateX(-400px) translateY(-150px);
+}
+
+    .layers:hover .layer0 {
+        transform: var(--expode) translateZ(350px);
+    }
+    .layers:hover .layer1 {
+        transform: var(--expode) translateZ(250px);
+    }
+    .layers:hover .layer2 {
+        transform: var(--expode) translateZ(150px);
+    }
+    .layers:hover .layer3 {
+        transform: var(--expode) translateZ(0);
+    }
+    .layers:hover .layer4 {
+        transform: var(--expode) translateZ(-130px);
+    }
+    .layers:hover .layer5 {
+        transform: var(--expode) translateZ(-200px);
+    }
+    .layers:hover .layer6 {
+        transform: var(--expode) translateZ(-270px);
+    }

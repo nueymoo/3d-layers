@@ -1,0 +1,174 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: radial-gradient(46% 46% at 50% 35%, #020224 20%, #1E1161 100%);
+}
+
+header {
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+    .header__white {
+        position: relative;
+        font-family: 'Bungee Shade', cursive;
+        font-weight: lighter;
+        color: #fff;
+        font-size: 5rem;
+        margin-top: 30px;
+    }
+    .header__white::before {
+        font-size: 5.5rem;
+        width: 100%;
+        content: "3D LAYERS";
+        font-family: 'Bungee Inline', cursive;
+        color: #8580F4;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+
+    .background {
+        height: 350px;
+        width: 100%;
+        background-color: #1E1161;
+    }
+
+        .content {
+            text-align: center;
+            max-width: 300px;
+            margin: auto;
+        }
+
+            .hover-me {
+                color:rgba(255,255,255,0.7);
+                font-family: 'Text Me One', sans-serif;
+                padding-top: 10px;
+                padding-bottom: 20px;
+            }
+                .hover-me__text {
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                    line-height: 100%;
+                    animation: down 4s infinite ease;
+                }
+                .hover-me__arrow {
+                    position: relative;
+                    margin-bottom: 20px;
+                    animation: down 4s infinite ease;
+                }
+                .hover-me__arrow:before {
+                    content: 'v';
+                    color:rgba(255,255,255,0.4);
+                    position: absolute;
+                    top: 0;
+                    animation: downmore 4s infinite ease;
+                }
+
+footer {
+    color: #fff;
+    font-family: 'Amiri', serif;
+    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+    .footer__detail {
+        margin: 5px 0;
+    }
+        .footer__detail--link {
+            text-decoration: none;
+            color: rgb(126, 182, 250);
+        }
+
+    .footer__made-by {
+        margin-top: 30px;
+        font-size: 0.8rem;
+    }
+    
+@keyframes down {
+    50% {
+        transform: translateY(10px);
+    }
+}
+    @keyframes downmore {
+        50% {
+            transform: translateY(20px);
+        }
+    }
+
+
+@media screen and (max-width: 768px) {
+
+    .layers {
+        max-width: 200px;
+    }
+    .layers:hover .layer0 {
+        transform: var(--expode) translateZ(320px);
+    }
+    .layers:hover .layer1 {
+        transform: var(--expode) translateZ(270px);
+    }
+    .layers:hover .layer2 {
+        transform: var(--expode) translateZ(220px);
+    }
+    .layers:hover .layer3 {
+        transform: var(--expode) translateZ(170px);
+    }
+    .layers:hover .layer4 {
+        transform: var(--expode) translateZ(120px);
+    }
+    .layers:hover .layer5 {
+        transform: var(--expode) translateZ(70px);
+    }
+    .layers:hover .layer6 {
+        transform: var(--expode) translateZ(20px);
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .header__white {
+        font-size: 4rem;
+    }
+    .header__white::before {
+        font-size: 4rem;
+    }
+
+    .layers {
+        max-width: 200px;
+    }
+    .layers:hover .layer0 {
+        transform: var(--expode) translateZ(260px);
+    }
+    .layers:hover .layer1 {
+        transform: var(--expode) translateZ(230px);
+    }
+    .layers:hover .layer2 {
+        transform: var(--expode) translateZ(200px);
+    }
+    .layers:hover .layer3 {
+        transform: var(--expode) translateZ(170px);
+    }
+    .layers:hover .layer4 {
+        transform: var(--expode) translateZ(140px);
+    }
+    .layers:hover .layer5 {
+        transform: var(--expode) translateZ(110px);
+    }
+    .layers:hover .layer6 {
+        transform: var(--expode) translateZ(80px);
+    }
+
+    footer {
+      position: relative;
+    }
+}
